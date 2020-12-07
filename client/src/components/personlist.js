@@ -13,7 +13,7 @@ const deletePerson = (personId) => {
         <div>
             {props.people.map((person, idx) => {
                 return <p key={idx}>
-                    <Link to={"/people/" + person._id}>
+                    <Link to={"/" + person._id}>
                         {person.title}
                     </Link>
                     

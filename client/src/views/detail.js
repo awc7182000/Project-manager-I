@@ -16,7 +16,7 @@ export default props => {
             <p>Title: {person.title}</p>
             <p>Price: {person.price}</p>
             <p>Description: {person.description}</p>
-            <Link to ={ "/people/" + person._id + "/edit"}>Edit</Link><br />
+            <Link to ={ "/" + person._id + "/edit"}>Edit</Link><br />
             <button>
                 <Link to={ "/people/"}onClick = {(e) => {deletePerson1(person._id)}}>Delete</Link>
             </button>
